@@ -3,7 +3,7 @@ backend:
   phases:
     preBuild:
       commands:
-        - 'cd .'   
+        - 'cd packages/backend'
     build:
       commands:
         - if [ "${AWS_BRANCH}" = "dev" ]; then envCache --set stackInfo ""; fi
