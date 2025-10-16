@@ -7,7 +7,7 @@ backend:
     build:
       commands:
         - envCache --set stackInfo ""
-        - amplifyPush --environment dev --simple
+        - amplifyPush --environment dev
     postBuild:
       commands:
         - 'cd ../..'
