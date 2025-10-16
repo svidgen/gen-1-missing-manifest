@@ -15,10 +15,6 @@ backend:
         - 'cd .'
 frontend:
   phases:
-    preBuild:
-      commands:
-        - nvm install
-        - nvm use 22
     build:
       commands:
         - mkdir -p packages/frontend/dist
