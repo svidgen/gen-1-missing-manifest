@@ -13,3 +13,21 @@ backend:
     postBuild:
       commands:
         - 'cd .'
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install
+        - nvm use 22
+    build:
+      commands:
+        - mkdir -p packages/frontend/dist
+        - cp packages/frontend/src/* packages/frontend/dist/
+  artifacts:
+    baseDirectory: packages/frontend/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules
+      - packages/*/node_modules

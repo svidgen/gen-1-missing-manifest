@@ -1,1 +1,3 @@
+*.swp
 packages/backend/amplify/#current-cloud-backend
+packages/frontend/dist
