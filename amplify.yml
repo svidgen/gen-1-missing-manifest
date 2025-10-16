@@ -6,6 +6,7 @@ backend:
         - 'cd packages/backend'
     build:
       commands:
+        - envCache --set stackInfo ""
         - amplifyPush --environment dev --simple
     postBuild:
       commands:
