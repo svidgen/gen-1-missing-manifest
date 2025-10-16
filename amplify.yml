@@ -6,7 +6,7 @@ backend:
         - 'cd packages/backend'
     build:
       commands:
-        - amplifyPush --simple
+        - amplifyPush --environment dev --simple
     postBuild:
       commands:
         - 'cd ../..'
