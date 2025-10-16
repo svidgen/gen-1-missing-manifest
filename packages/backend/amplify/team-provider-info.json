@@ -10,11 +10,6 @@
       "StackName": "amplify-missingmanifest-dev-8e838",
       "StackId": "arn:aws:cloudformation:us-west-1:654007195465:stack/amplify-missingmanifest-dev-8e838/25bb1600-aa0d-11f0-814d-02b4c1ee9a3b",
       "AmplifyAppId": "d5wbw1z5dar9u"
-    },
-    "categories": {
-      "auth": {
-        "missingmanifestce5aa8e5": {}
-      }
     }
   },
   "totallynew": {
