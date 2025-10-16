@@ -6,8 +6,8 @@ backend:
         - 'cd packages/backend'
     build:
       commands:
-        - if [ "${AWS_BRANCH}" = "dev" ]; then envCache --set stackInfo ""; fi
-        - if [ "${AWS_BRANCH}" = "dev" ]; then amplifyPush --environment dev --simple; fi
+        - if [ "${AWS_BRANCH}" = "main" ]; then envCache --set stackInfo ""; fi
+        - if [ "${AWS_BRANCH}" = "main" ]; then amplifyPush --environment dev --simple; fi
         - if [ "${AWS_BRANCH}" = "test" ]; then envCache --set stackInfo ""; fi
         - if [ "${AWS_BRANCH}" = "test" ]; then amplifyPush --environment testenv --simple; fi
     postBuild:
