@@ -12,7 +12,7 @@ backend:
         - if [ "${AWS_BRANCH}" = "test" ]; then amplifyPush --environment testenv --simple; fi
     postBuild:
       commands:
-        - 'cd .'
+        - 'cd ../..'
 frontend:
   phases:
     build:
